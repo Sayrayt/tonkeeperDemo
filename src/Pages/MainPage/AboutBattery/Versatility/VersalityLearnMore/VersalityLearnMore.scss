@@ -1,0 +1,81 @@
+// $main-bg-color: rgb(255, 255, 255);
+$h1-text-color: rgb(14, 107, 168);
+
+@import '~bootstrap/scss/bootstrap';
+
+.VersalityLearnMoreWrapper {
+    
+    background-image: url('../../../../../data/img//MainPage/Versality/LearnMore/VersalitylearnMoreBg.jpg');
+    width: 700px;
+    border-radius: 25px;
+
+    .VersalityLearnMoreContent {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .TextWrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                color: $h1-text-color;
+                font-size: 40px;
+
+                span {
+                    color: white;
+                    font-size: 40px;
+                }
+            }
+
+            span {
+                font-size: 22px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                    text-decoration: solid underline;
+                }
+            }
+        }
+
+        .SupportedСoinsWrapper {
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+
+            .TextAboutSupportedСoins {
+                padding-bottom: 30px;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .CarouselWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .Carousel {
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+}
